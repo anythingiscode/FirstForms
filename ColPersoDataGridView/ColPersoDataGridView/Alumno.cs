@@ -10,19 +10,19 @@ namespace ColPersoDataGridView
     {
         #region VARIABLES PRIVADAS
 
-        private int _id = 0;
+        private string _id = string.Empty;
         private string _nombre = string.Empty;
         private string _apellido = string.Empty;
-        private int _NotaExamen = 0;
+        private double _NotaExamen = 0;
 
         #endregion
 
         #region VARIABLES PÚBLICAS
 
-        public int Id { get => _id; set => _id = value; }
+        public string Id { get => _id; set => _id = value; }
         public string Nombre { get => _nombre; set => _nombre = value; }
         public string Apellido { get => _apellido; set => _apellido = value; }
-        public int NotaExamen { get => _NotaExamen; set => _NotaExamen = value; }
+        public double NotaExamen { get => _NotaExamen; set => _NotaExamen = value; }
 
         #endregion
 
@@ -30,7 +30,7 @@ namespace ColPersoDataGridView
 
         public Alumno() { }
 
-        public Alumno(int id, string nombre, string apellido, int notaExamen)
+        public Alumno(string id, string nombre, string apellido, double notaExamen)
         {
             Id = id;
             Nombre = nombre;

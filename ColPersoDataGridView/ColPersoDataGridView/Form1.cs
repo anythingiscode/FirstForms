@@ -10,5 +10,15 @@ namespace ColPersoDataGridView
         {
             InitializeComponent();
         }
+
+        public void Rellenar()
+        {
+            List<Alumno> alumnos = new List<Alumno>();
+            alumnos.Add(new Alumno("11111111A","Maria","Casas",7.5));
+            alumnos.Add(new Alumno("22222222B", "Carlos", "Perez", 5));
+            alumnos.Add(new Alumno("11111111A", "Monica", "Lezo", 4));
+            alumnos.Add(new Alumno("11111111A", "Pedro", "Suarez", 8.5));
+
+        }
     }
 }
