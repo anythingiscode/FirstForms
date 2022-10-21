@@ -33,6 +33,7 @@
             this.colNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colApellido = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNota = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colGraficoNota = new ColPersoDataGridView.NotaExamenColumna();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNotas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,7 +44,8 @@
             this.colId,
             this.colNombre,
             this.colApellido,
-            this.colNota});
+            this.colNota,
+            this.colGraficoNota});
             this.dgvNotas.Location = new System.Drawing.Point(12, 12);
             this.dgvNotas.Name = "dgvNotas";
             this.dgvNotas.RowHeadersWidth = 51;
@@ -87,6 +89,15 @@
             this.colNota.ReadOnly = true;
             this.colNota.Width = 125;
             // 
+            // colGraficoNota
+            // 
+            this.colGraficoNota.Frozen = true;
+            this.colGraficoNota.HeaderText = "Grafico Nota";
+            this.colGraficoNota.MinimumWidth = 6;
+            this.colGraficoNota.Name = "colGraficoNota";
+            this.colGraficoNota.ReadOnly = true;
+            this.colGraficoNota.Width = 200;
+            // 
             // frmNotasAl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -107,5 +118,6 @@
         private DataGridViewTextBoxColumn colNombre;
         private DataGridViewTextBoxColumn colApellido;
         private DataGridViewTextBoxColumn colNota;
+        private NotaExamenColumna colGraficoNota;
     }
 }

@@ -27,6 +27,7 @@ namespace ColPersoDataGridView
                 dgvNotas.Rows[rowIndex].Cells[1].Value = alumno.Nombre;
                 dgvNotas.Rows[rowIndex].Cells[2].Value = alumno.Apellido;
                 dgvNotas.Rows[rowIndex].Cells[3].Value = alumno.NotaExamen;
+                dgvNotas.Rows[rowIndex].Cells[4].Value = alumno.NotaExamen;
             }
 
         }
