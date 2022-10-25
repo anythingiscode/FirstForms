@@ -10,3 +10,10 @@ Creamos la carpeta Datos
 		A continuacion creo todos los metodos que van a manipular esta lista (CRUD)
 
 Para poder trabajar con ficheros .json instalo el paquete Nuguet de : Newtonsoft.Json
+
+Para acceder al json en la class EmpleadoRepositorio creo constante con una ruta al fichero
+A continuación convierto la List Empleados en un fichero json con: JsonConvert.SerializeObject(Empleados,Formatting.Indented)
+y despues creo el fichero con "File" (File.WriteAllText(RUTA_FICHERO_EMPLEADOS, json);)
+La creación del fichero también se aplicará en otras finciones que modifican la lista Empleados como : Eliminar, Actualizar,....
+
+
