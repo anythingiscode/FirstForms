@@ -20,6 +20,19 @@ namespace WinFrm_PracticaRegistroEmpleadosJson.Formularios
         {
             InitializeComponent();
         }
+
+        // Nuevo constructor para usar el mismo from de empleado para la función ModificarEmpleado
+        public EmpleadoFrom(Empleado emp)       //Paso un obj Empleado "emp" que correspondrá al empleado seleccionado en la dgvEmpleados
+        {
+            InitializeComponent();
+            txtId.Text = emp.Id;
+            txtNombre.Text = emp.Nombre;
+            txtApellido1.Text = emp.Apellido1;
+            txtApellido2.Text = emp.Apellido2;
+            txtEdad.Text = emp.Edad.ToString();
+            txtEmail.Text = emp.Email;
+
+        }
         private void EmpleadoForm_Load(object sender, EventArgs e)
         {
 

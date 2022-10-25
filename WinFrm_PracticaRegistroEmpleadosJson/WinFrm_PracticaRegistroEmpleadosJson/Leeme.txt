@@ -8,3 +8,5 @@ Creamos la carpeta Datos
  -Creo Clase Empleado. Nota : el set será privado porque solo accederemos a los datos desde dentro de la clase
  -Creo Clase EmpleadoRepositorio con una propiedad static que será la lista de empleados "Empleados" con el set privado porque solo la modificaremos desde esta clase
 		A continuacion creo todos los metodos que van a manipular esta lista (CRUD)
+
+Para poder trabajar con ficheros .json instalo el paquete Nuguet de : Newtonsoft.Json

@@ -39,14 +39,14 @@ namespace WinFrm_PracticaRegistroEmpleadosJson.Datos
         }
 
         /*ACTUALIZAR EMPLEADO*/
-        public static void ActualizarEmpleado(string id, Empleado empModif)
+        public static void ActualizarEmpleado(string idOrigen, Empleado empModif)
         {
-            if(Empleados.FindIndex(e => e.Id == id) != -1)
-                Empleados[Convert.ToInt32(id)] = empModif;
+           int indiceEmpleadoOrig = Empleados.FindIndex(e => e.Id == idOrigen);
+            if (indiceEmpleadoOrig != -1)        //Localizo la fila en la que se encuentra el empleado a modificar
+                Empleados[indiceEmpleadoOrig] = empModif;
             else
                 MessageBox.Show("El id del empleado que quiere modificar no existe", "Error", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-        
-
+       
         }
     }    
 }

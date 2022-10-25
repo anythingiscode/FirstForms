@@ -54,6 +54,7 @@
             this.picRemouve.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picRemouve.TabIndex = 0;
             this.picRemouve.TabStop = false;
+            this.picRemouve.Click += new System.EventHandler(this.picRemouve_Click);
             // 
             // picAdd
             // 
@@ -75,6 +76,7 @@
             this.picModif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picModif.TabIndex = 2;
             this.picModif.TabStop = false;
+            this.picModif.Click += new System.EventHandler(this.picModif_Click);
             // 
             // dgvEmpleados
             // 
